@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
+    <title>Make your School ID Barcode</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Make your School ID Barcode</h1>
+    
+    <input type="text" id="id" name="idno" placeholder="FIN/NRIC Number" style="min-width: 350px; margin-bottom: 5px;"><br>
+    
+    <input type="text" id="name" name="name" placeholder="Full Name" style="min-width: 350px; margin-bottom: 5px;"><br>
+    
+    <button onClick='JsBarcode("#barcode", document.getElementById("id").value, {text: document.getElementById("name").value,});' style="min-width: 166px">Generate your School ID</button>
+    <br><br>
+    <div style="width: 400px; border-radius: 15px; background: white; margin: auto; ">
+      <h3 style="color: black; padding-top: 20px; margin-block-end: 0px;">
+        GEMS World Academy Singapore
+      </h3>
+      <img id="barcode" style="padding: 10px; padding-top: -5px;"/>
+    </div>
+    
+  </body>
+</html>

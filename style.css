@@ -1,0 +1,37 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  text-align: center;
+  background: #00AAE7;
+}
+
+h1 {
+  color: white;
+}
+
+input{
+  width:224px;
+  text-align: center;
+}
+
+input[type=text], select {
+  padding: 10px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button{
+  background-color: white;
+  font-weight: 800;
+  color: #00AAE7;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
